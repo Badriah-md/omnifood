@@ -1,3 +1,6 @@
+/* ------------------------------------------------- */
+/*BASIC SETUP*/
+/*---------------------------------------------------*/
 *{
     padding: 0;
     margin: 0;
@@ -11,19 +14,16 @@ html{
     font-weight: 300;
     text-rendering: optimizeLegibility;
 }
+/* ------------------------------------------------- */
+/*REUSABLE COMPONENT*/
+/*---------------------------------------------------*/
 .row{
     max-width: 1140px;
     margin: 0 auto;
     
 }
 
-header{
-    background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(img/hero.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    
-}
+/*________HEADINGS____________*/
 h1{
     margin: 0 !important;
     color: #fff;
@@ -34,13 +34,7 @@ h1{
     font-weight: 300;
 }
 
-.hero-text-box{
-    position: absolute;
-    width: 1140px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-}
+/*________BUTTONS____________*/
 .btn{
     margin-top: 15px;
     
@@ -67,4 +61,46 @@ h1{
 .btn:hover{
     background-color: #be7b01;
     border-color: #be7b01;
+}
+/* ------------------------------------------------- */
+/*HEADER*/
+/*---------------------------------------------------*/
+header{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(img/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    
+}
+.hero-text-box{
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.logo{
+    margin-top: 5px;
+    height: 100px;
+    width: auto;
+    float: left;
+}
+
+.main-nav{
+    float: right;
+    list-style: none;
+    margin-top: 25px
+  
+}
+.main-nav li{
+    
+    display: inline-block;
+    margin-left: 40px;
+}
+.main-nav li a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
 }
